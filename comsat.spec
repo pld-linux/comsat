@@ -11,7 +11,7 @@ Patch1:		biff+comsat-0.10-nobr.patch
 Obsoletes:	biff
 Provides:	biff
 Prereq:		rc-inetd
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The biff client and comsat server are an antiquated method of
@@ -30,7 +30,6 @@ Klient biff oraz serwer comsat to przestarza³a metoda asynchronicznego
 powiadamianiu o nadchodz±cej poczcie. Chcia¿ wci±¿ siê je obs³uguje, wiêkszo¶æ
 u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL (lub mail w csh 
 i klonach) lub u¿ywa oddzielnej aplikacji takiej jak xbiff albo xmailbox.
-
 
 %prep
 %setup -q -n biff+comsat-0.10
