@@ -5,8 +5,6 @@ Version:	0.17
 Release:	1
 License:	BSD
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
 Patch0:		biff+%{name}-0.10-misc.patch
