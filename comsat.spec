@@ -14,8 +14,8 @@ Group:		Networking/Daemons
 Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
 # Source0-md5:	0e366384b0ffc7d4f748713a6359e089
 Source1:	%{name}.inetd
+PreReq:		rc-inetd
 Provides:	biff
-Prereq:		rc-inetd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	biff
 Obsoletes:	biff+comsat
@@ -52,7 +52,7 @@ applications dédiés comme xbiff ou xmailbox.
 
 %description -l pl
 Klient biff oraz serwer comsat to przestarza³a metoda asynchronicznego
-powiadamianiu o nadchodz±cej poczcie. Chcia¿ wci±¿ siê je obs³uguje,
+powiadamianiu o nadchodz±cej poczcie. Chocia¿ wci±¿ siê je obs³uguje,
 wiêkszo¶æ u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL
 (lub mail w csh i klonach) lub u¿ywa oddzielnej aplikacji takiej jak
 xbiff albo xmailbox.
@@ -83,6 +83,7 @@ xbiff, xmailbox gibi uygulamalarý kullanýr.
 %setup -q -n biff+comsat-%{version}
 
 %build
+# it's confgen, not autoconf configure - so don't use macro
 ./configure \
 	--prefix=%{_prefix} \
 	--with-c-compiler=%{__cc}
