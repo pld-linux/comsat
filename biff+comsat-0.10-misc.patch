@@ -1,0 +1,20 @@
+--- biff+comsat-0.10/MCONFIG.ewt	Sun Aug 24 09:33:55 1997
++++ biff+comsat-0.10/MCONFIG	Sun Aug 24 09:34:16 1997
+@@ -33,7 +33,7 @@
+ WARNINGS= -Wall -W -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wcast-align
+ 
+ # Compiler flags to use
+-CFLAGS= -pipe -O2 -D__USE_BSD_SIGNAL $(WARNINGS)
++CFLAGS= -pipe $(RPM_OPT_FLAGS) -D__USE_BSD_SIGNAL $(WARNINGS)
+ 
+ # Link-time flags to use
+ LDFLAGS= -s
+@@ -46,7 +46,7 @@
+ 
+ 
+ # Work around GNU libc lossage
+-USE_GLIBC=0
++USE_GLIBC=1
+ 
+ 
+ 
