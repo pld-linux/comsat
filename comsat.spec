@@ -1,14 +1,16 @@
-Summary:	A mail checker client and comsat mail checking server.
+Summary:	A mail checker client and comsat mail checking server
+Summary(pl):	Klient i serwer powiadamiania o nadchodz±cej poczcie
 Name:		comsat
 Version:	0.10
 Release:	22
 License:	BSD
 Group:		Networking/Daemons
+Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/finger/biff+comsat-0.10.tar.gz
-Source1:	comsat.inetd
-Patch0:		biff+comsat-0.10-misc.patch
-Patch1:		biff+comsat-0.10-nobr.patch
+Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/finger/biff+%{name}-%{version}.tar.gz
+Source1:	%{name}.inetd
+Patch0:		biff+%{name}-0.10-misc.patch
+Patch1:		biff+%{name}-0.10-nobr.patch
 Obsoletes:	biff
 Provides:	biff
 Prereq:		rc-inetd
@@ -39,7 +41,7 @@ xbiff albo xmailbox.
 %patch1 -p1
 
 %build
-%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+%{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -50,8 +52,6 @@ install -d $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd
 	MANDIR=%{_mandir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/comsat
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man{1,8}/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -72,7 +72,7 @@ fi
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/biff
 %attr(755,root,root) %{_sbindir}/in.comsat
-%{_mandir}/man1/biff.1.gz
-%{_mandir}/man8/in.comsat.8.gz
-%{_mandir}/man8/comsat.8.gz
+%{_mandir}/man1/biff.1*
+%{_mandir}/man8/in.comsat.8*
+%{_mandir}/man8/comsat.8*
 %attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/comsat
