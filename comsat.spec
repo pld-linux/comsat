@@ -25,6 +25,13 @@ You may want to install biff if you'd like to be notified when mail
 arrives. However, you should probably check out the more modern
 methodologies of mail notification (xbiff or xmailbox) instead.
 
+%description -l pl
+Klient biff oraz serwer comsat to przestarza³a metoda asynchronicznego
+powiadamianiu o nadchodz±cej poczcie. Chcia¿ wci±¿ siê je obs³uguje, wiêkszo¶æ
+u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL (lub mail w csh 
+i klonach) lub u¿ywa oddzielnej aplikacji takiej jak xbiff albo xmailbox.
+
+
 %prep
 %setup -q -n biff+comsat-0.10
 %patch0 -p1
