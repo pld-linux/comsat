@@ -1,16 +1,16 @@
 Summary:	A mail checker client and comsat mail checking server
 Summary(pl):	Klient i serwer powiadamiania o nadchodz±cej poczcie
 Name:		comsat
-Version:	0.10
-Release:	22
+Version:	0.17
+Release:	1
 License:	BSD
 Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/finger/biff+%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
-Patch0:		biff+%{name}-0.10-misc.patch
-Patch1:		biff+%{name}-0.10-nobr.patch
+#Patch0:		biff+%{name}-0.10-misc.patch
+#Patch1:		biff+%{name}-0.10-nobr.patch
 Obsoletes:	biff
 Provides:	biff
 Prereq:		rc-inetd
@@ -36,7 +36,7 @@ wiêkszo¶æ u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL
 xbiff albo xmailbox.
 
 %prep
-%setup -q -n biff+comsat-0.10
+%setup -q -n biff+comsat-%{version}
 %patch0 -p1
 %patch1 -p1
 
