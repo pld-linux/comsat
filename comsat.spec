@@ -9,8 +9,8 @@ Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
 Source1:	%{name}.inetd
-#Patch0:		biff+%{name}-0.10-misc.patch
-#Patch1:		biff+%{name}-0.10-nobr.patch
+Patch0:		biff+%{name}-0.10-misc.patch
+Patch1:		biff+%{name}-0.10-nobr.patch
 Obsoletes:	biff
 Provides:	biff
 Prereq:		rc-inetd
@@ -37,8 +37,8 @@ xbiff albo xmailbox.
 
 %prep
 %setup -q -n biff+comsat-%{version}
-%patch0 -p1
-%patch1 -p1
+#%patch0 -p1
+#%patch1 -p1
 
 %build
 %{__make} RPM_OPT_FLAGS="%{rpmcflags}"
