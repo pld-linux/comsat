@@ -1,0 +1,11 @@
+--- biff+comsat-0.10/comsat/Makefile.nobr	Tue Aug 11 16:08:47 1998
++++ biff+comsat-0.10/comsat/Makefile	Tue Aug 11 16:09:14 1998
+@@ -16,7 +16,7 @@
+ install: comsat
+ 	install -s -m$(DAEMONMODE) comsat $(INSTALLROOT)$(SBINDIR)/in.comsat
+ 	install -m$(MANMODE) comsat.8 $(INSTALLROOT)$(MANDIR)/man8/in.comsat.8
+-	ln -sf in.comsat.8 $(MANDIR)/man8/comsat.8
++	ln -sf in.comsat.8 $(INSTALLROOT)$(MANDIR)/man8/comsat.8
+ 
+ clean:
+ 	rm -f *.o comsat
