@@ -39,14 +39,14 @@ xbiff albo xmailbox.
 %patch1 -p1
 
 %build
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man{1,8}}
 install -d $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd
 
-make install INSTALLROOT=$RPM_BUILD_ROOT \
+%{__make} install INSTALLROOT=$RPM_BUILD_ROOT \
 	MANDIR=%{_mandir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/comsat
