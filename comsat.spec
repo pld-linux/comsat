@@ -12,6 +12,7 @@ Release:	7
 License:	BSD
 Group:		Networking/Daemons
 Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
+# Source0-md5:	0e366384b0ffc7d4f748713a6359e089
 Source1:	%{name}.inetd
 Provides:	biff
 Prereq:		rc-inetd
