@@ -2,8 +2,9 @@ Summary:	A mail checker client and comsat mail checking server.
 Name:		comsat
 Version:	0.10
 Release:	22
-Copyright:	BSD
-Group:		System Environment/Daemons
+License:	BSD
+Group:		Networking/Daemons
+Group(pl):	Sieciowe/Serwery
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/finger/biff+comsat-0.10.tar.gz
 Source1:	comsat.inetd
 Patch0:		biff+comsat-0.10-misc.patch
@@ -15,11 +16,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The biff client and comsat server are an antiquated method of
-asynchronous mail notification.  Although they are still supported, most
-users use their shell's MAIL variable (or csh shell's mail variable) to
-check for mail, or a dedicated application like xbiff or xmailbox.  If
-the comsat service is not enabled, biff won't work and you'll need to use
-either the MAIL or mail variable.   
+asynchronous mail notification. Although they are still supported,
+most users use their shell's MAIL variable (or csh shell's mail
+variable) to check for mail, or a dedicated application like xbiff or
+xmailbox. If the comsat service is not enabled, biff won't work and
+you'll need to use either the MAIL or mail variable.
 
 You may want to install biff if you'd like to be notified when mail
 arrives. However, you should probably check out the more modern
@@ -27,9 +28,10 @@ methodologies of mail notification (xbiff or xmailbox) instead.
 
 %description -l pl
 Klient biff oraz serwer comsat to przestarza³a metoda asynchronicznego
-powiadamianiu o nadchodz±cej poczcie. Chcia¿ wci±¿ siê je obs³uguje, wiêkszo¶æ
-u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL (lub mail w csh 
-i klonach) lub u¿ywa oddzielnej aplikacji takiej jak xbiff albo xmailbox.
+powiadamianiu o nadchodz±cej poczcie. Chcia¿ wci±¿ siê je obs³uguje,
+wiêkszo¶æ u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL
+(lub mail w csh i klonach) lub u¿ywa oddzielnej aplikacji takiej jak
+xbiff albo xmailbox.
 
 %prep
 %setup -q -n biff+comsat-0.10
