@@ -14,7 +14,7 @@ Group:		Networking/Daemons
 Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
 # Source0-md5:	0e366384b0ffc7d4f748713a6359e089
 Source1:	%{name}.inetd
-PreReq:		rc-inetd
+Requires:	rc-inetd
 Provides:	biff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	biff
@@ -80,7 +80,7 @@ MAIL deðiþkenini (csh kabuðunda mail deðiþkenine karþýlýk gelir) ya da
 xbiff, xmailbox gibi uygulamalarý kullanýr.
 
 %prep
-%setup -q -n biff+comsat-%{version}
+%setup -q -n biff+%{name}-%{version}
 
 %build
 # it's confgen, not autoconf configure - so don't use macro
@@ -121,7 +121,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/comsat
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/rc-inetd/comsat
 %attr(755,root,root) %{_bindir}/biff
 %attr(755,root,root) %{_sbindir}/in.comsat
 %{_mandir}/man[18]/*
