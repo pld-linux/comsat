@@ -86,7 +86,7 @@ xbiff, xmailbox gibi uygulamalarý kullanýr.
 # it's confgen, not autoconf configure - so don't use macro
 ./configure \
 	--prefix=%{_prefix} \
-	--with-c-compiler=%{__cc}
+	--with-c-compiler="%{__cc}"
 
 %{__make} CFLAGS="%{rpmcflags}"
 
