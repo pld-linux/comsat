@@ -14,11 +14,12 @@ Group:		Networking/Daemons
 Source0:	ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/biff+%{name}-%{version}.tar.gz
 # Source0-md5:	0e366384b0ffc7d4f748713a6359e089
 Source1:	%{name}.inetd
+BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	rc-inetd
 Provides:	biff
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	biff
 Obsoletes:	biff+comsat
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The biff client and comsat server are an antiquated method of
@@ -108,15 +109,11 @@ install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/comsat
 rm -rf $RPM_BUILD_ROOT
 
 %post
-if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd restart 1>&2
-else
-	echo "Type \"/etc/rc.d/init.d/rc-inetd start\" to start inet server" 1>&2
-fi
+%service -q rc-inetd reload
 
 %postun
-if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd restart
+if [ "$1" = 0 ]; then
+	%service -q rc-inetd reload
 fi
 
 %files
