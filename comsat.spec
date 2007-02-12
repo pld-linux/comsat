@@ -1,11 +1,11 @@
 Summary:	A mail checker client and comsat mail checking server
-Summary(de):	Biff-Mail-Checker-Client und comsat-Mail-Checking-Server
-Summary(es):	Programa para buscar e-mail en un servidor comsat
-Summary(fr):	Le client de notification de courrier Biff et le serveur de notification de courrier comsat
-Summary(pl):	Klient i serwer powiadamiania o nadchodz±cej poczcie
-Summary(pt_BR):	Um programa para checar e-mail e um servidor comsat
-Summary(ru):	ëÌÉÅÎÔ É ÓÅÒ×ÅÒ ÄÌÑ ĞÒÏ×ÅÒËÉ ÎÁÌÉŞÉÑ ĞÏŞÔÙ
-Summary(tr):	İleti olup olmadığını denetleyen istemci ve sunucular
+Summary(de.UTF-8):   Biff-Mail-Checker-Client und comsat-Mail-Checking-Server
+Summary(es.UTF-8):   Programa para buscar e-mail en un servidor comsat
+Summary(fr.UTF-8):   Le client de notification de courrier Biff et le serveur de notification de courrier comsat
+Summary(pl.UTF-8):   Klient i serwer powiadamiania o nadchodzÄ…cej poczcie
+Summary(pt_BR.UTF-8):   Um programa para checar e-mail e um servidor comsat
+Summary(ru.UTF-8):   ĞšĞ»Ğ¸ĞµĞ½Ñ‚ Ğ¸ ÑĞµÑ€Ğ²ĞµÑ€ Ğ´Ğ»Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ Ğ½Ğ°Ğ»Ğ¸Ñ‡Ğ¸Ñ Ğ¿Ğ¾Ñ‡Ñ‚Ñ‹
+Summary(tr.UTF-8):   Ä°leti olup olmadÄ±ÄŸÄ±nÄ± denetleyen istemci ve sunucular
 Name:		comsat
 Version:	0.17
 Release:	7
@@ -29,56 +29,56 @@ variable) to check for mail, or a dedicated application like xbiff or
 xmailbox. If the comsat service is not enabled, biff won't work and
 you'll need to use either the MAIL or mail variable.
 
-%description -l de
+%description -l de.UTF-8
 biff-Client und comsat-Server sind ein veraltetes Verfahren zur
-asynchronen Mail-Benachrichtigung. Obwohl es noch unterstützt wird,
+asynchronen Mail-Benachrichtigung. Obwohl es noch unterstÃ¼tzt wird,
 verwenden die meisten Benutzer die MAIL-Variable der Shell (bzw.
 'mail' unter csh-Variationen), oder eine spezielle Anwendung wie xbiff
 or xmailbox, um neue Mail-Nachrichten abzufragen.
 
-%description -l es
-Cliente biff y servidor comsat son métodos anticuados para recibir y
-enviar notificaciones asíncronas de nuevos mensajes. A pesar de que
-aún se soportan, la mayoría de los usuarios usa sus variables de
+%description -l es.UTF-8
+Cliente biff y servidor comsat son mÃ©todos anticuados para recibir y
+enviar notificaciones asÃ­ncronas de nuevos mensajes. A pesar de que
+aÃºn se soportan, la mayorÃ­a de los usuarios usa sus variables de
 ambiente MAIL (el mail bajo variante de csh) para verificar la llegada
-de nuevos mensajes, o una aplicación dedicada tal como xbiff o
+de nuevos mensajes, o una aplicaciÃ³n dedicada tal como xbiff o
 xmailbox.
 
-%description -l fr
-Le client biff et le serveur comsat servent à l'antique notification
-asynchrone de mail. Bien qu'ils soient toujours supportés, beaucoup
+%description -l fr.UTF-8
+Le client biff et le serveur comsat servent Ã  l'antique notification
+asynchrone de mail. Bien qu'ils soient toujours supportÃ©s, beaucoup
 d'utilisateurs utilisent les variables MAIL du shell ( ou mail sous
 les variantes csh), pour se tenir au courant du mail, ou des
-applications dédiés comme xbiff ou xmailbox.
+applications dÃ©diÃ©s comme xbiff ou xmailbox.
 
-%description -l pl
-Klient biff oraz serwer comsat to przestarza³a metoda asynchronicznego
-powiadamianiu o nadchodz±cej poczcie. Chocia¿ wci±¿ siê je obs³uguje,
-wiêkszo¶æ u¿ytkowników ustawia w tym celu zmienn± ¶rodowiskow± MAIL
-(lub mail w csh i klonach) lub u¿ywa oddzielnej aplikacji takiej jak
+%description -l pl.UTF-8
+Klient biff oraz serwer comsat to przestarzaÅ‚a metoda asynchronicznego
+powiadamianiu o nadchodzÄ…cej poczcie. ChociaÅ¼ wciÄ…Å¼ siÄ™ je obsÅ‚uguje,
+wiÄ™kszoÅ›Ä‡ uÅ¼ytkownikÃ³w ustawia w tym celu zmiennÄ… Å›rodowiskowÄ… MAIL
+(lub mail w csh i klonach) lub uÅ¼ywa oddzielnej aplikacji takiej jak
 xbiff albo xmailbox.
 
-%description -l pt_BR
-O cliente biff e o servidor comsat são métodos antiquados para receber
-e enviar notificações assíncronas de novas mensagens. Embora eles
-ainda sejam suportados, a maioria dos usuários usa suas variáveis de
+%description -l pt_BR.UTF-8
+O cliente biff e o servidor comsat sÃ£o mÃ©todos antiquados para receber
+e enviar notificaÃ§Ãµes assÃ­ncronas de novas mensagens. Embora eles
+ainda sejam suportados, a maioria dos usuÃ¡rios usa suas variÃ¡veis de
 ambiente MAIL (ou mail sob variante de csh) para verificar a chegada
-de novas mensagens, ou uma aplicação dedicada tal como xbiff ou
+de novas mensagens, ou uma aplicaÃ§Ã£o dedicada tal como xbiff ou
 xmailbox.
 
-%description -l ru
-ëÌÉÅÎÔ biff É ÓÅÒ×ÅÒ comsat - ÜÔÏ ÁÎÔÉË×ÁÒÎÙÊ ÍÅÔÏÄ ÁÓÉÎÈÒÏÎÎÏÇÏ
-ÉÚ×ÅİÅÎÉÑ Ï ĞÒÉÈÏÄÅ ĞÏŞÔÙ. èÏÔÑ ÏÎÉ ×ÓÅ ÅİÅ ĞÏÄÄÅÒÖÉ×ÁÀÔÓÑ,
-ÂÏÌØÛÉÎÓÔ×Ï ĞÏÌØÚÏ×ÁÔÅÌÅÊ ÉÓĞÏÌØÚÕÀÔ ÄÌÑ ĞÒÏ×ÅÒËÉ ÎÁÌÉŞÉÑ ĞÏŞÔÙ
-ĞÅÒÅÍÅÎÎÕÀ ÏËÒÕÖÅÎÉÑ MAIL (ÉÌÉ mail ÄÌÑ csh) Ó×ÏÅÇÏ ÛÅÌÌÁ ÉÌÉ
-ÓĞÅÃÉÁÌØÎÙÅ ĞÒÏÇÒÁÍÍÙ, ÔÁËÉÅ ËÁË xbiff ÉÌÉ xmailbox.
+%description -l ru.UTF-8
+ĞšĞ»Ğ¸ĞµĞ½Ñ‚ biff Ğ¸ ÑĞµÑ€Ğ²ĞµÑ€ comsat - ÑÑ‚Ğ¾ Ğ°Ğ½Ñ‚Ğ¸ĞºĞ²Ğ°Ñ€Ğ½Ñ‹Ğ¹ Ğ¼ĞµÑ‚Ğ¾Ğ´ Ğ°ÑĞ¸Ğ½Ñ…Ñ€Ğ¾Ğ½Ğ½Ğ¾Ğ³Ğ¾
+Ğ¸Ğ·Ğ²ĞµÑ‰ĞµĞ½Ğ¸Ñ Ğ¾ Ğ¿Ñ€Ğ¸Ñ…Ğ¾Ğ´Ğµ Ğ¿Ğ¾Ñ‡Ñ‚Ñ‹. Ğ¥Ğ¾Ñ‚Ñ Ğ¾Ğ½Ğ¸ Ğ²ÑĞµ ĞµÑ‰Ğµ Ğ¿Ğ¾Ğ´Ğ´ĞµÑ€Ğ¶Ğ¸Ğ²Ğ°ÑÑ‚ÑÑ,
+Ğ±Ğ¾Ğ»ÑŒÑˆĞ¸Ğ½ÑÑ‚Ğ²Ğ¾ Ğ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ĞµĞ¹ Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·ÑƒÑÑ‚ Ğ´Ğ»Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ Ğ½Ğ°Ğ»Ğ¸Ñ‡Ğ¸Ñ Ğ¿Ğ¾Ñ‡Ñ‚Ñ‹
+Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½ÑƒÑ Ğ¾ĞºÑ€ÑƒĞ¶ĞµĞ½Ğ¸Ñ MAIL (Ğ¸Ğ»Ğ¸ mail Ğ´Ğ»Ñ csh) ÑĞ²Ğ¾ĞµĞ³Ğ¾ ÑˆĞµĞ»Ğ»Ğ° Ğ¸Ğ»Ğ¸
+ÑĞ¿ĞµÑ†Ğ¸Ğ°Ğ»ÑŒĞ½Ñ‹Ğµ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñ‹, Ñ‚Ğ°ĞºĞ¸Ğµ ĞºĞ°Ğº xbiff Ğ¸Ğ»Ğ¸ xmailbox.
 
-%description -l tr
-biff istemcisi ve comsat sunucusu, eski bir mektup bildirme yöntemini
-gerçeklerler. Halen desteklenmelerine karşın, pek çok kullanıcı,
-mektup olup olmadığını kontrol etmek için ya bir kabuk değişkeni olan
-MAIL değişkenini (csh kabuğunda mail değişkenine karşılık gelir) ya da
-xbiff, xmailbox gibi uygulamaları kullanır.
+%description -l tr.UTF-8
+biff istemcisi ve comsat sunucusu, eski bir mektup bildirme yÃ¶ntemini
+gerÃ§eklerler. Halen desteklenmelerine karÅŸÄ±n, pek Ã§ok kullanÄ±cÄ±,
+mektup olup olmadÄ±ÄŸÄ±nÄ± kontrol etmek iÃ§in ya bir kabuk deÄŸiÅŸkeni olan
+MAIL deÄŸiÅŸkenini (csh kabuÄŸunda mail deÄŸiÅŸkenine karÅŸÄ±lÄ±k gelir) ya da
+xbiff, xmailbox gibi uygulamalarÄ± kullanÄ±r.
 
 %prep
 %setup -q -n biff+%{name}-%{version}
