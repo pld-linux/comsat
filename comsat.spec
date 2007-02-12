@@ -1,11 +1,11 @@
 Summary:	A mail checker client and comsat mail checking server
-Summary(de.UTF-8):   Biff-Mail-Checker-Client und comsat-Mail-Checking-Server
-Summary(es.UTF-8):   Programa para buscar e-mail en un servidor comsat
-Summary(fr.UTF-8):   Le client de notification de courrier Biff et le serveur de notification de courrier comsat
-Summary(pl.UTF-8):   Klient i serwer powiadamiania o nadchodzącej poczcie
-Summary(pt_BR.UTF-8):   Um programa para checar e-mail e um servidor comsat
-Summary(ru.UTF-8):   Клиент и сервер для проверки наличия почты
-Summary(tr.UTF-8):   İleti olup olmadığını denetleyen istemci ve sunucular
+Summary(de.UTF-8):	Biff-Mail-Checker-Client und comsat-Mail-Checking-Server
+Summary(es.UTF-8):	Programa para buscar e-mail en un servidor comsat
+Summary(fr.UTF-8):	Le client de notification de courrier Biff et le serveur de notification de courrier comsat
+Summary(pl.UTF-8):	Klient i serwer powiadamiania o nadchodzącej poczcie
+Summary(pt_BR.UTF-8):	Um programa para checar e-mail e um servidor comsat
+Summary(ru.UTF-8):	Клиент и сервер для проверки наличия почты
+Summary(tr.UTF-8):	İleti olup olmadığını denetleyen istemci ve sunucular
 Name:		comsat
 Version:	0.17
 Release:	7
